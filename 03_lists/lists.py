@@ -19,8 +19,11 @@ get_even_nums([1, 2, 3]) # returns [2]
 
 
 def get_even_nums(nums):
-    # your code here
-    pass
+    even_nums = []
+    for i in nums:
+        if i % 2 == 0:
+            even_nums.append(i)
+    return even_nums
 
 
 @run_test
